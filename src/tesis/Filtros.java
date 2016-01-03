@@ -12,8 +12,8 @@ public class Filtros {
         double[][] GrisEfecto2 = new double[fil][fil];
         int lado = 3;
         double[][] GrisZoom = operadorDuplicarFyC(img, fil, col, lado);
-        double[][] mask1 = {{0, 0, 0}, {1, 1, 1}, {0, 0, 0}};
-        double[][] mask2 = {{0, 1, 0}, {0, 1, 0}, {0, 1, 0}};
+        double[][] mask1 = {{0, 0, 0}, {1, 1, 1}, {0, 0, 0}}; //matriz 1
+        double[][] mask2 = {{0, 1, 0}, {0, 1, 0}, {0, 1, 0}}; //matriz 2
         int Forig;          //m filas
         int Corig;          //n columnas
 
@@ -76,7 +76,6 @@ public class Filtros {
         float jo;
         int n;
 
-//        GrisOrig = img.getMatrizImg();//devuelve la matriz Img y lo asigna a I
         Forig = fil;//medidas del gris origianl
         Corig = col;
 
